@@ -71,8 +71,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())*/
         <li class="dropdown">
           <a href="#" class="dropdown-toggle glyphicon glyphicon-user" data-toggle="dropdown"> ProfileSettings<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><?php echo $this->html->link('Personal Details',array('controller' => 'candidates', 'action' => 'personal')); ?></li>
-            <li><?php echo $this->html->link('Educational Details',array('controller' => 'candidates', 'action' => 'educational')); ?></li>
+            <li><?php echo $this->html->link('Personal Details',array('controller' => 'personals', 'action' => 'add')); ?></li>
+            <li><?php echo $this->html->link('Educational Details',array('controller' => 'educations', 'action' => 'add')); ?></li>
             <li><?php echo $this->html->link('Professional Details',array('controller' => 'candidates', 'action' => 'professional')); ?></li>
             <li><?php echo $this->html->link('Desired Job Details',array('controller' => 'candidates', 'action' => 'desired')); ?></li>
           </ul>

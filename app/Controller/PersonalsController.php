@@ -25,6 +25,16 @@ class PersonalsController extends AppController {
 			'male' => 'Male', 
 			'female' => 'Female'
 			));
+
+		if($this->request->is('post') || $this->request->is('put')) {
+
+			$this->Personal->save( $this->request->data );
+			$this->redirect(array(
+					'controller' => 'educations',
+					'action' => 'add'
+				));
+
+		}
 	}
 
 }

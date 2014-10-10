@@ -43,7 +43,7 @@
             'class' => 'form-control',
             'label' => ''
             ));
-          echo $this->Form->input('logo',array(
+          echo $this->Form->input('resume',array(
             'type' => 'file',
             'class' => 'form-control',
             'label' => 'Upload Resume'
