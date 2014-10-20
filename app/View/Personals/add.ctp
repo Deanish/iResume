@@ -17,10 +17,17 @@
         <div class="col-md-6">
           <?php
           echo $this->Form->create();
+
+          echo $this->Form->input('user_id',array(
+            'class' => "form-control",
+            // 'disabled',
+            'label' => ''
+            ));          
           echo $this->Form->input('mobile',array(
             'type' => 'text',
             'class' => 'form-control',
-            'placeholder' => 'Contact Number',
+            'placeholder' => 'Mobile Number',
+            'maxlength' => '10',
             'label' => ''
             ));
           echo $this->Form->input('nationality', array(

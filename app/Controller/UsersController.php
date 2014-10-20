@@ -25,11 +25,6 @@ class UsersController extends AppController {
 
 		}
 
-	    var $components = array('Linkedin.Linkedin' => array(
-	        'key' => '7566a7pkaayei4',
-	        'secret' => 'MQ89TTO3eSvaOMA7',
-	    ));
-
 	}
 
 	public function login() {
@@ -49,7 +44,7 @@ class UsersController extends AppController {
 			$this->data['User']['password'] = Security::hash( $this->data['User']['password'], 'sha1', true );
 			$user = $this->User->findByEmailAndPassword($this->request->data('User.email'), $this->request->data('User.password'));
 			if( $user ) {
-				$this->Session->write('User', $user);
+				// $this->Session->setFlash("__('Welcome, '. $this->Auth->user('firstname'))");
 				$this->redirect(array(
 					'controller' => 'candidates',
 					'action' => 'index'

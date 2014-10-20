@@ -59,7 +59,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())*/
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><?php echo $this->html->link(' Home',array('controller' => 'home', 'action' => 'index'),array('class' => 'glyphicon glyphicon-home')); ?></li>
-        <li><?php echo $this->html->link(' JobSeeker',array('controller' => 'candidates', 'action' => 'login'),array('class' => 'glyphicon glyphicon-search')); ?></li>
+        <li><?php echo $this->html->link(' JobSeeker',array('controller' => 'users', 'action' => 'login'),array('class' => 'glyphicon glyphicon-search')); ?></li>
         <li><?php echo $this->html->link(' ResumeServices',array('controller' => 'resumes', 'action' => 'index'),array('class' => 'glyphicon glyphicon-list-alt')); ?></li>
         <li><?php echo $this->html->link(' RecruiterZone',array('controller' => 'recruiters', 'action' => 'login'),array('class' => 'glyphicon glyphicon-credit-card')); ?></li>
       	<li><?php echo $this->html->link(' JobCounselling',array('controller' => 'resumes', 'action' => 'counselling'),array('class' => 'glyphicon glyphicon-thumbs-up')); ?></li>
@@ -71,7 +71,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())*/
         <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
       </form> -->
       <ul class="nav navbar-nav navbar-right">
-      	<li style="color: #ffdd00;"><span class="glyphicon glyphicon-phone-alt"></span> Helpline : +91-1234567890</li>
+      	<li style="color: #ffdd00;"><span class="glyphicon glyphicon-phone-alt"></span> Helpline : +91-98801 65531</li>
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -130,7 +130,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())*/
             <a href="#"><small>Terms & Conditions</small></a><br />
           </div>
           <div class="col-md-4" style="padding-top: 10px 10px;">
-            <h5><span class="glyphicon glyphicon-phone-alt"></span> Call us: +91-1234567890 </h5>
+            <h5><span class="glyphicon glyphicon-phone-alt"></span> Call us: +91-98801 65531 </h5>
             <h5><span class="glyphicon glyphicon-envelope"></span> Mail us: support@vspell.com </h5>
             <h5><span class="glyphicon glyphicon-copyright-mark"></span> 2014 VSpell </h5>
             <h5><span class="glyphicon glyphicon-signal"></span> Developed by <a href="http://skylabsinc.in/" target="blank"><span style="color: #000; ">SkyLabs</span></a> </h5>

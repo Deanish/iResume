@@ -2,6 +2,11 @@
 
 class Personal extends AppModel {
 
+	public $belongsTo = array(
+		'User'
+	);
+
+
 	public $validate = array(
 		'mobile' => array(
 			'rule' => 'notEmpty',

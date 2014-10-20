@@ -34,6 +34,6 @@ class AppHelper extends Helper {
 
 class AuthHelper extends AppHelper {
 
-	public $helpers = array('Auth');
+	// public $helpers = array('Auth');
 
 }

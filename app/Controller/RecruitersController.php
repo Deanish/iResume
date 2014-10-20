@@ -60,7 +60,6 @@ class RecruitersController extends AppController {
 			$recruiter = $this->Recruiter->findByEmailAndPassword($this->request->data('Recruiter.email'), $this->request->data('Recruiter.password'));
 			
 			if( $recruiter ) {
-				$this->Session->write('Recruiter', $recruiter);
 				$this->redirect(array(
 					'controller' => 'recruiters',
 					'action' => 'index'

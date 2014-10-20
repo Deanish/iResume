@@ -4,7 +4,11 @@ class PersonalsController extends AppController {
 
 	public function add() {
 
+		AuthComponent::user('id');
+
 		$this->layout = 'candidate';
+
+		$users = $this->Personal->User->find('list');
 
 		$this->set('nationalityOptions', array(
 			'Null' => ' - Select Nationality - ', 
@@ -35,6 +39,8 @@ class PersonalsController extends AppController {
 				));
 
 		}
+
+		$this->set('users', $users);
 	}
 
 }
